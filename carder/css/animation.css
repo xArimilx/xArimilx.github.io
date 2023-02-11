@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  over-flow: hidden;
+  margin: 0;
+}
+#grass, #sky, #road, #lane {
+  position: relative;
+  width: 100%;
+  height: 33%;
+}
+#sky {
+  background: skyblue;
+}
+#grass {
+  background: seagreen;
+}
+#road{
+  background: black;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+}
+#lane {
+  top: 50%;
+  height: 0px;
+  border: 5px dashed white;
+}
+#mario {
+  border: 0.1em dotted yellow;
+  top: -12.5%;
+  position: absolute;
+  animation: drive 3.1415s infinite;
+}
+@keyframes drive {
+  from {
+    left: 0;
+  }
+  to{
+    left: 100%;
+  }
+  }
+}
+}
